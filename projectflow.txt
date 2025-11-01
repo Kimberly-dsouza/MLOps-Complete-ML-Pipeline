@@ -6,6 +6,8 @@ Building Pipeline:
 
 Setting up dcv pipeline (without params)
 5> Create dvc.yaml file and add stages to it.
+Instead of writing to dvc yaml you can also do this 
+"dvc stage add -n data_ingestion -d src/data_ingestion.py -o data/raw python src/data_ingestion.py"
 6> dvc init then do "dvc repro" to test the pipeline automation. (check dvc dag)
 7> Now git add, commit, push
 
